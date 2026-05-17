@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/avinashsmac/Desktop/Jaipur_mineral/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/avinashsmac/Desktop/Jaipur_mineral/wwwroot/data/categories.json",
+      "PackagePath": "staticwebassets/data/categories.json"
+    },
+    {
+      "Id": "/Users/avinashsmac/Desktop/Jaipur_mineral/wwwroot/data/faqs.json",
+      "PackagePath": "staticwebassets/data/faqs.json"
+    },
+    {
+      "Id": "/Users/avinashsmac/Desktop/Jaipur_mineral/wwwroot/data/products.json",
+      "PackagePath": "staticwebassets/data/products.json"
+    },
+    {
+      "Id": "/Users/avinashsmac/Desktop/Jaipur_mineral/wwwroot/data/projects.json",
+      "PackagePath": "staticwebassets/data/projects.json"
+    },
+    {
+      "Id": "/Users/avinashsmac/Desktop/Jaipur_mineral/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/avinashsmac/Desktop/Jaipur_mineral/wwwroot/logo.png",
+      "PackagePath": "staticwebassets/logo.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.JaipurMeniral.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.JaipurMeniral.props",
+      "PackagePath": "build\\JaipurMeniral.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.JaipurMeniral.props",
+      "PackagePath": "buildMultiTargeting\\JaipurMeniral.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.JaipurMeniral.props",
+      "PackagePath": "buildTransitive\\JaipurMeniral.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

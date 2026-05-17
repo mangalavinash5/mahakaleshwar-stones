@@ -1,0 +1,228 @@
+@{
+    ViewData["Title"] = "About Us - Mahakaleshwar Stones | Premium Sandstone Exporter India";
+    ViewData["MetaDescription"] = "Learn about Mahakaleshwar Stones — 25+ years of natural stone manufacturing and export from Rajasthan, India. ISO certified, global exporter of sandstone, marble, and granite.";
+}
+
+<!-- Page Hero -->
+<section class="page-hero"
+         style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="container text-center text-white position-relative">
+        <h1 class="page-hero-title">About <span class="text-gold">Us</span></h1>
+        <p class="page-hero-subtitle">Our Story, Our Craft, Our Commitment</p>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+            <ol class="breadcrumb breadcrumb-light">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Company Introduction -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <div class="section-label">Our Story</div>
+                <h2 class="section-title">Crafting Natural Stone <span class="text-gold">Excellence</span> Since 2001
+                </h2>
+                <p class="lead mb-4">Mahakaleshwar Stones was founded in 2001 with a single mission: to bring
+                    Rajasthan's magnificent natural stone to the world's finest projects. What started as a small
+                    quarrying operation has grown into a globally recognised natural stone manufacturer and exporter.
+                </p>
+                <p class="text-muted mb-4">Today, we operate a modern processing facility in Rajasthan, India, equipped
+                    with the latest stone-cutting and finishing machinery. Our team of 200+ skilled artisans and stone
+                    experts work tirelessly to ensure every piece that leaves our facility meets the highest
+                    international standards.</p>
+                    <p class="text-muted mb-4">Our stones have been used in luxury villas, 5-star hotels, heritage
+                        restorations, and iconic commercial buildings across 25+ countries. We are proud to be the stone
+                        behind some of the world's most beautiful spaces.</p>
+                        <div class="row g-3 mt-2">
+                            <div class="col-6">
+                                <div class="about-stat-box">
+                                    <div class="about-stat-num text-gold">200+</div>
+                                    <div class="about-stat-label">Skilled Artisans</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="about-stat-box">
+                                    <div class="about-stat-num text-gold">50,000+</div>
+                                    <div class="about-stat-label">Sq.m Monthly Capacity</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?w=800&q=80"
+                             alt="Mahakaleshwar Stones Factory" class="img-fluid rounded-3 shadow-lg" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission -->
+        <section class="section-padding bg-light-stone">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Our Vision & <span class="text-gold">Mission</span></h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="vm-card vm-vision">
+                            <div class="vm-icon"><i class="fas fa-eye"></i></div>
+                            <h4>Our Vision</h4>
+                            <p>To be the world's most trusted natural stone exporter, known for uncompromising quality,
+                                sustainable quarrying practices, and exceptional customer service. We envision our stone in the
+                                most iconic buildings of the next century.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="vm-card vm-mission">
+                                <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+                                <h4>Our Mission</h4>
+                                <p>To source the finest natural stone from Rajasthan's quarries, process it with precision and care,
+                                    and deliver it reliably to clients across the world — enabling them to create beautiful, lasting
+                                    spaces that stand the test of time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Manufacturing Process -->
+                <section class="section-padding">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <div class="section-label">From Quarry to Destination</div>
+                            <h2 class="section-title">Our Manufacturing <span class="text-gold">Process</span></h2>
+                        </div>
+                        <div class="process-timeline">
+                            @{
+                                var steps = new[] {
+                    ("fas fa-mountain","1. Quarrying","Stone is carefully extracted from our licensed quarries in Rajasthan using precision drilling and controlled blasting techniques to preserve stone quality."),
+                    ("fas fa-cut","2. Cutting & Sizing","Modern CNC wire saws and bridge saws cut stone to exact dimensions. We can produce any standard or custom size with ±1mm tolerance."),
+                    ("fas fa-tools","3. Surface Finishing","Skilled craftsmen apply the required finish — natural, honed, polished, sandblasted, bush hammered, or tumbled — using specialised machinery."),
+                    ("fas fa-search","4. Quality Control","Every batch passes through multi-stage quality inspection: thickness calibration, visual inspection, flatness check, and sample testing against international standards."),
+                    ("fas fa-box","5. Export Packing","Stone is carefully packed in ISPM-15 compliant wooden crates with foam protection. Moisture-resistant wrapping for ocean freight ensures safe delivery."),
+                    ("fas fa-ship","6. Global Delivery","Full export documentation prepared. We coordinate with leading freight forwarders to ensure reliable, on-time delivery to any port worldwide.")
+                };
+                            }
+                            @foreach (var (icon, title, desc) in steps)
+                            {
+                                <div class="process-step">
+                                    <div class="process-icon"><i class="@icon"></i></div>
+                                    <div class="process-content">
+                                        <h5>@title</h5>
+                                        <p>@desc</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quality Assurance -->
+                <section class="section-padding bg-charcoal text-white">
+                    <div class="container">
+                        <div class="row align-items-center g-5">
+                            <div class="col-lg-6">
+                                <div class="section-label-light">ISO 9001:2015 Certified</div>
+                                <h2 class="section-title text-white">Uncompromising <span class="text-gold">Quality</span> Standards
+                                </h2>
+                                <p class="mb-4 opacity-75">Every stone product at Mahakaleshwar Stones is subject to rigorous quality
+                                    testing and certification to meet international standards. We believe quality isn't just a process —
+                                    it's our promise.</p>
+                                    <div class="row g-3">
+                                        @{
+                                            var certs = new[] {
+                            ("fas fa-certificate","ISO 9001:2015","Quality Management"),
+                            ("fas fa-shield-alt","CE Marking","European Standards"),
+                            ("fas fa-vial","Lab Tested","Independent Testing"),
+                            ("fas fa-leaf","Sustainable","Responsible Quarrying")
+                        };
+                                        }
+                                        @foreach (var (ico, cert, sub) in certs)
+                                        {
+                                            <div class="col-6">
+                                                <div class="cert-item">
+                                                    <i class="@ico text-gold me-2"></i>
+                                                    <div>
+                                                        <div class="fw-semibold">@cert</div>
+                                                        <small class="opacity-75">@sub</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row g-3">
+                                        @{
+                                            var tests = new[] {
+                            "Water Absorption Test","Flexural Strength Test","Slip Resistance (R-value)",
+                            "Frost Resistance Test","Abrasion Resistance","Thermal Cycling Test",
+                            "Colour Fastness Check","Dimensional Accuracy"
+                        };
+                                        }
+                                        @foreach (var test in tests)
+                                        {
+                                            <div class="col-md-6">
+                                                <div class="quality-check">
+                                                    <i class="fas fa-check-circle text-gold me-2"></i>@test
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Export Capabilities -->
+                    <section class="section-padding">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <div class="section-label">Worldwide Reach</div>
+                                <h2 class="section-title">Export <span class="text-gold">Capabilities</span></h2>
+                            </div>
+                            <div class="row g-4 text-center">
+                                @{
+                                    var caps = new[] {
+                    ("fas fa-warehouse","50,000 sq.m","Monthly Production Capacity"),
+                    ("fas fa-shipping-fast","15-45 Days","Average Delivery Time"),
+                    ("fas fa-globe","25+ Countries","Export Destinations"),
+                    ("fas fa-file-alt","100%","Documentation Handled")
+                };
+                                }
+                                @foreach (var (ico, val, lbl) in caps)
+                                {
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="export-cap-card">
+                                            <i class="@ico text-gold mb-3" style="font-size:2rem"></i>
+                                            <div class="fs-1 fw-bold text-dark">@val</div>
+                                            <div class="text-muted">@lbl</div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA -->
+                    <section class="section-padding bg-gold-gradient text-white text-center">
+                        <div class="container">
+                            <h2 class="fw-bold mb-3">Ready to Source Premium Indian Natural Stone?</h2>
+                            <p class="lead mb-4 opacity-90">Request free samples and get a competitive quote within 24 hours.</p>
+                            <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                                <button class="btn btn-light btn-lg px-4 text-dark fw-semibold" style="min-width:180px"
+                                        data-bs-toggle="modal" data-bs-target="#inquiryModal">
+                                    <i class="fas fa-paper-plane me-2"></i>Request a Quote
+                                </button>
+                                <a href="https://wa.me/919999999999" target="_blank" class="btn btn-whatsapp btn-lg px-4"
+                                       style="min-width:180px">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp Us
+                                </a>
+                            </div>
+                        </div>
+                    </section>

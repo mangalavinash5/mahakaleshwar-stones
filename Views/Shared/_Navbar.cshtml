@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar" id="mainNavbar">
+    <div class="container">
+        
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+            <span class="brand-icon">
+                <img src="~/logo.png" alt="Mahakaleshwar Stones Logo" class="navbar-brand-logo" />
+            </span>
+            <div class="brand-text">
+                <span class="brand-name">Mahakaleshwar Stones</span>
+                <span class="brand-tagline">Natural Stone Exporters</span>
+            </div>
+        </a>
+        <div class="d-flex align-items-center gap-2 d-lg-none">
+            <a href="https://wa.me/919999999999" class="btn btn-whatsapp btn-sm px-2 py-1" style="font-size:0.8rem">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <button class="navbar-toggler border-0 p-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMain" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="About" asp-action="Index">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Products
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-stone">
+                        <li><a class="dropdown-item" asp-controller="Product" asp-action="Index">All Products</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" asp-controller="Product" asp-action="Index"
+                               asp-route-category="sandstone-tiles"><i
+                            class="fas fa-th-large me-2 text-gold"></i>Sandstone Tiles</a></li>
+                            <li><a class="dropdown-item" asp-controller="Product" asp-action="Index"
+                                   asp-route-category="sandstone-slabs"><i
+                                class="fas fa-border-all me-2 text-gold"></i>Sandstone Slabs</a></li>
+                                <li><a class="dropdown-item" asp-controller="Product" asp-action="Index"
+                                       asp-route-category="wall-cladding"><i class="fas fa-layer-group me-2 text-gold"></i>Wall
+                                    Cladding</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Product" asp-action="Index"
+                                           asp-route-category="cobbles"><i class="fas fa-circle me-2 text-gold"></i>Cobbles &
+                                        Setts</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Product" asp-action="Index"
+                                                   asp-route-category="granite"><i class="fas fa-gem me-2 text-gold"></i>Granite</a></li>
+                                            <li><a class="dropdown-item" asp-controller="Product" asp-action="Index"
+                                                       asp-route-category="marble"><i class="fas fa-star me-2 text-gold"></i>Marble</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Project" asp-action="Index">Projects</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Faq" asp-action="Index">FAQ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a>
+                                        </li>
+                                        <li class="nav-item ms-lg-2">
+                                            <button class="btn btn-gold btn-nav" data-bs-toggle="modal" data-bs-target="#inquiryModal">
+                                                <i class="fas fa-paper-plane me-1"></i> Get Quote
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>

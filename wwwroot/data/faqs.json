@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Do you export sandstone internationally?",
+    "answer": "Yes, Mahakaleshwar Stones exports premium natural stone to over 25 countries worldwide including UK, USA, Australia, UAE, Singapore, Germany, France, Netherlands, and more. We have extensive experience in international logistics and can handle all export documentation, including GST invoices, certificates of origin, and phytosanitary certificates where required.",
+    "category": "Export"
+  },
+  {
+    "id": 2,
+    "question": "What surface finishes are available for sandstone?",
+    "answer": "We offer a comprehensive range of finishes: Natural/Riven (the natural split face), Honed (smooth matte), Polished (high sheen), Sandblasted (textured, slip-resistant), Bush Hammered (rough textured, ideal for outdoor use), Calibrated (machine-cut to consistent thickness), and Tumbled (rounded edges for an aged look). The best finish depends on your application — we're happy to advise.",
+    "category": "Products"
+  },
+  {
+    "id": 3,
+    "question": "What is the typical delivery time for international orders?",
+    "answer": "Standard delivery timelines are: India (1–2 weeks), Middle East & Asia (2–4 weeks), UK & Europe (4–6 weeks), USA & Canada (5–7 weeks), Australia & New Zealand (5–8 weeks). These are estimates and depend on port congestion and customs clearance. We always provide a confirmed lead time with your order confirmation.",
+    "category": "Shipping"
+  },
+  {
+    "id": 4,
+    "question": "Can you supply custom sizes and thicknesses?",
+    "answer": "Absolutely. We have state-of-the-art cutting and processing machinery that allows us to produce stone in virtually any size, shape, and thickness to your specifications. Custom cutting is available with a minimum order quantity. Please send your technical drawings or specifications with your inquiry for an accurate quote.",
+    "category": "Products"
+  },
+  {
+    "id": 5,
+    "question": "What is the Minimum Order Quantity (MOQ)?",
+    "answer": "Our standard MOQ varies by product: Tiles & Slabs: 30–50 sq.m, Cobbles & Setts: 1 pallet (approx. 10–15 sq.m), Wall Cladding: 30–50 sq.m, Custom-cut products: project-specific. For smaller quantities, we may be able to accommodate via our trade distributor network. Contact us to discuss your specific needs.",
+    "category": "Ordering"
+  },
+  {
+    "id": 6,
+    "question": "How is the stone packaged for export?",
+    "answer": "All stone is carefully packaged to ensure safe transit: Tiles are packed in strong wooden crates with foam/polystyrene between layers, Heavy slabs are individually wrapped and crated, Cobbles are shipped in heavy-duty polypropylene bags on pallets, All packaging is ISPM-15 compliant (heat-treated wood), and we use moisture-resistant wrapping for ocean freight.",
+    "category": "Shipping"
+  },
+  {
+    "id": 7,
+    "question": "Do you provide stone samples before ordering?",
+    "answer": "Yes, we send complimentary stone samples (up to 3 types) to serious buyers. You pay only the courier charges. Samples are approximately 15x15cm and include all available finishes for that stone type. Sample delivery typically takes 5–10 business days internationally. Request your free samples through our contact form.",
+    "category": "Ordering"
+  },
+  {
+    "id": 8,
+    "question": "What quality certifications does your stone have?",
+    "answer": "Our products meet international quality standards. We provide: CE marking for European export, ISO 9001:2015 quality management certification, Material test reports (water absorption, flexural strength, slip resistance), Country of origin certificates, and REACH compliance documentation. We are happy to provide specific test reports for any product on request.",
+    "category": "Quality"
+  },
+  {
+    "id": 9,
+    "question": "What payment terms do you offer?",
+    "answer": "For new customers, we typically work on 30–50% advance payment with balance against Bill of Lading. For established relationships, we offer Letter of Credit (LC) and open account terms based on mutual agreement. We accept bank transfers (SWIFT), Letter of Credit, and major payment platforms. All invoices are in USD, EUR, or GBP.",
+    "category": "Ordering"
+  },
+  {
+    "id": 10,
+    "question": "Can you help with installation advice?",
+    "answer": "While we are primarily a manufacturer and exporter, our technical team can provide comprehensive installation guidelines, recommended adhesives and grouts, sealing recommendations, maintenance instructions, and CAD laying patterns. We can also connect you with our local installation partners in select countries.",
+    "category": "Technical"
+  }
+]

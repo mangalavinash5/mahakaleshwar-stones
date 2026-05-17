@@ -1,0 +1,113 @@
+@model List<JaipurMeniral.Models.Project>
+@{
+    ViewData["Title"] = "Our Projects - Natural Stone Portfolio | Mahakaleshwar Stones";
+    ViewData["MetaDescription"] = "View Mahakaleshwar Stones's project portfolio — luxury villas, 5-star resorts, heritage hotels, and commercial buildings across 25+ countries.";
+}
+
+<!-- Page Hero -->
+<section class="page-hero"
+         style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="container text-center text-white position-relative">
+        <h1 class="page-hero-title">Our <span class="text-gold">Projects</span></h1>
+        <p class="page-hero-subtitle">Real Stone, Real Craftsmanship — Worldwide</p>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+            <ol class="breadcrumb breadcrumb-light">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item active">Projects</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Filter Tabs -->
+<section class="py-4 bg-white border-bottom">
+    <div class="container">
+        <div class="project-filter-tabs" id="projectFilters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="Residential">Residential</button>
+            <button class="filter-btn" data-filter="Hospitality">Hospitality</button>
+            <button class="filter-btn" data-filter="Commercial">Commercial</button>
+            <button class="filter-btn" data-filter="Heritage">Heritage</button>
+            <button class="filter-btn" data-filter="Public">Public</button>
+        </div>
+    </div>
+</section>
+
+<!-- Masonry Projects Grid -->
+<section class="section-padding">
+    <div class="container">
+        <div class="projects-masonry" id="projectsGrid">
+            @foreach (var project in Model)
+            {
+                <div class="project-masonry-item" data-category="@project.Category">
+                    <div class="project-card-large">
+                        <div class="project-img-wrap-large">
+                            <img src="@project.Image" alt="@project.Title" loading="lazy" />
+                            <div class="project-overlay-large">
+                                <span class="project-cat-badge">@project.Category</span>
+                                <div class="project-info-large">
+                                    <h4>@project.Title</h4>
+                                    <p>@project.Description</p>
+                                    <div class="project-details-row">
+                                        <span><i class="fas fa-cube me-1"></i>@project.MaterialUsed</span>
+                                        <span><i class="fas fa-map-marker-alt me-1"></i>@project.Location</span>
+                                        <span><i class="fas fa-calendar me-1"></i>@project.Year</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-body-large">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div>
+                                    <h5 class="mb-1">@project.Title</h5>
+                                    <p class="text-muted small mb-2">@project.Description.Substring(0, Math.Min(100,
+                                                                            project.Description.Length))...</p>
+                                    </div>
+                                    <span class="project-year-badge">@project.Year</span>
+                                </div>
+                                <div class="project-meta-row">
+                                    <span class="project-meta-item"><i
+                                        class="fas fa-cube text-gold me-1"></i>@project.MaterialUsed.Split(',')[0]</span>
+                                        <span class="project-meta-item"><i
+                                            class="fas fa-map-pin text-gold me-1"></i>@project.Location</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section-padding bg-light-stone text-center">
+                <div class="container">
+                    <h2 class="section-title mb-3">Have a <span class="text-gold">Project</span> in Mind?</h2>
+                    <p class="text-muted mb-4 fs-5">Tell us about your requirements and let's create something beautiful together.
+                    </p>
+                    <button class="btn btn-gold btn-lg px-5" data-bs-toggle="modal" data-bs-target="#inquiryModal">
+                        <i class="fas fa-paper-plane me-2"></i>Start a Project Inquiry
+                    </button>
+                </div>
+            </section>
+
+            @section Scripts {
+                <script>
+                    document.querySelectorAll('.filter-btn').forEach(btn => {
+                        btn.addEventListener('click', function () {
+                            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                            this.classList.add('active');
+                            var filter = this.dataset.filter;
+                            document.querySelectorAll('.project-masonry-item').forEach(item => {
+                                if (filter === 'all' || item.dataset.category === filter) {
+                                    item.style.display = '';
+                                    item.classList.add('fade-in');
+                                } else {
+                                    item.style.display = 'none';
+                                }
+                            });
+                        });
+                    });
+                </script>
+            }

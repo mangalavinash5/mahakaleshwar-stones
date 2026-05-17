@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/avinashsmac/Desktop/Jaipur_mineral/JaipurMeniral.csproj": {}
+  },
+  "projects": {
+    "/Users/avinashsmac/Desktop/Jaipur_mineral/JaipurMeniral.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/avinashsmac/Desktop/Jaipur_mineral/JaipurMeniral.csproj",
+        "projectName": "JaipurMeniral",
+        "projectPath": "/Users/avinashsmac/Desktop/Jaipur_mineral/JaipurMeniral.csproj",
+        "packagesPath": "/Users/avinashsmac/.nuget/packages/",
+        "outputPath": "/Users/avinashsmac/Desktop/Jaipur_mineral/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/avinashsmac/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/opt/homebrew/Cellar/dotnet@8/8.0.125/libexec/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

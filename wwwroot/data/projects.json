@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1, "title": "Luxury Villa Flooring - Dubai", "slug": "luxury-villa-dubai",
+    "description": "Complete flooring solution for a 8,000 sq.ft luxury villa in Dubai using premium Makrana White Marble and Jodhpur Pink Sandstone. The project included custom-cut flooring, bathroom cladding, and exterior paving.",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=80",
+    "materialUsed": "Makrana White Marble, Jodhpur Pink Sandstone",
+    "location": "Dubai, UAE", "category": "Residential", "year": 2023
+  },
+  {
+    "id": 2, "title": "5-Star Resort Landscaping - Maldives", "slug": "resort-landscaping-maldives",
+    "description": "Extensive landscaping project for a 5-star beach resort including pool decks, pathways, and feature walls using Teak Wood Sandstone Slabs and Mint Sandstone stepping stones.",
+    "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=80",
+    "materialUsed": "Teak Wood Sandstone, Mint Sandstone",
+    "location": "Maldives", "category": "Hospitality", "year": 2023
+  },
+  {
+    "id": 3, "title": "Heritage Hotel Wall Cladding - London", "slug": "hotel-cladding-london",
+    "description": "Restoration and new extension cladding for a heritage hotel in London. Autumn Brown Sandstone wall cladding was used to blend seamlessly with the existing Victorian architecture.",
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80",
+    "materialUsed": "Autumn Brown Sandstone, Buff Yellow Sandstone",
+    "location": "London, UK", "category": "Hospitality", "year": 2022
+  },
+  {
+    "id": 4, "title": "Commercial Office Exterior - Singapore", "slug": "office-exterior-singapore",
+    "description": "High-rise commercial building exterior cladding project in Singapore's CBD using Grey Limestone Tiles and Kandla Grey Sandstone. Over 12,000 sq.m of stone installed.",
+    "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80",
+    "materialUsed": "Grey Limestone, Kandla Grey Sandstone",
+    "location": "Singapore", "category": "Commercial", "year": 2022
+  },
+  {
+    "id": 5, "title": "Infinity Pool Deck - Bali", "slug": "pool-deck-bali",
+    "description": "Stunning infinity pool deck and surrounding area for a luxury villa resort in Bali. Red Multicolour Sandstone and Jodhpur Pink Sandstone used to create a warm tropical ambiance.",
+    "image": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=900&q=80",
+    "materialUsed": "Red Multicolour Sandstone, Jodhpur Pink Sandstone",
+    "location": "Bali, Indonesia", "category": "Residential", "year": 2024
+  },
+  {
+    "id": 6, "title": "Museum Public Spaces - Paris", "slug": "museum-paris",
+    "description": "Supply of Makrana White Marble and premium Indian sandstone for public spaces and galleries in a prestigious Paris museum, including entrance flooring and sculptural elements.",
+    "image": "https://images.unsplash.com/photo-1564596823821-79b46a63effc?w=900&q=80",
+    "materialUsed": "Makrana White Marble, Teak Wood Sandstone",
+    "location": "Paris, France", "category": "Public", "year": 2024
+  },
+  {
+    "id": 7, "title": "Courtyard Cobblestone - Amsterdam", "slug": "courtyard-amsterdam",
+    "description": "Traditional cobblestone courtyard restoration using authentic Buff Yellow Sandstone cobbles, maintaining the historic character of a 17th century Amsterdam canal house.",
+    "image": "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=900&q=80",
+    "materialUsed": "Buff Yellow Sandstone Cobbles",
+    "location": "Amsterdam, Netherlands", "category": "Heritage", "year": 2023
+  },
+  {
+    "id": 8, "title": "Luxury Apartment Complex - Melbourne", "slug": "apartments-melbourne",
+    "description": "Supply and installation of natural stone for a 45-unit luxury apartment complex in Melbourne, including balcony tiles, lobby flooring, and facade cladding.",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80",
+    "materialUsed": "Black Galaxy Granite, Grey Limestone",
+    "location": "Melbourne, Australia", "category": "Residential", "year": 2024
+  }
+]

@@ -1,0 +1,212 @@
+@model JaipurMeniral.Models.Product
+@{
+    ViewData["Title"] = $"{Model.Name} - Natural Stone | Mahakaleshwar Stones";
+    var related = ViewBag.RelatedProducts as List<JaipurMeniral.Models.Product> ?? new();
+}
+
+<!-- Page Hero -->
+<section class="page-hero page-hero-xs" style="background-image: url('@Model.Images.FirstOrDefault()')">
+    <div class="page-hero-overlay-dark"></div>
+    <div class="container text-white position-relative py-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-light mb-0">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item"><a asp-controller="Product" asp-action="Index">Products</a></li>
+                <li class="breadcrumb-item"><a asp-controller="Product" asp-action="Index"
+                                                   asp-route-category="@Model.CategorySlug">@Model.CategoryName</a></li>
+                    <li class="breadcrumb-item active">@Model.Name</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Image Gallery -->
+                <div class="col-lg-6">
+                    <div class="product-gallery">
+                        <div class="gallery-main">
+                            <img id="mainImage" src="@Model.Images.FirstOrDefault()" alt="@Model.Name"
+                                 class="img-fluid rounded-3 shadow" />
+                            <div class="gallery-zoom-hint"><i class="fas fa-search-plus me-1"></i>Click to zoom</div>
+                        </div>
+                        @if (Model.Images.Count > 1)
+                        {
+                            <div class="gallery-thumbs mt-3">
+                                @foreach (var img in Model.Images)
+                                {
+                                    <div class="gallery-thumb @(img == Model.Images.First() ? "active" : "")"
+                                         onclick="setMainImage(this, '@img')">
+                                        <img src="@img" alt="@Model.Name" />
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="col-lg-6">
+                    <div class="product-detail-info">
+                        <span class="product-cat-tag">@Model.CategoryName</span>
+                        <h1 class="product-detail-title">@Model.Name</h1>
+                        <p class="product-detail-desc text-muted mb-4">@Model.Description</p>
+
+                        <!-- Specs Grid -->
+                        <div class="specs-grid mb-4">
+                            <div class="spec-item">
+                                <div class="spec-label"><i class="fas fa-palette me-1 text-gold"></i>Finish</div>
+                                <div class="spec-value">@Model.FinishType</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label"><i class="fas fa-ruler me-1 text-gold"></i>Standard Size</div>
+                                <div class="spec-value">@Model.Size</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label"><i class="fas fa-tint me-1 text-gold"></i>Colour</div>
+                                <div class="spec-value">@Model.Color</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label"><i class="fas fa-layer-group me-1 text-gold"></i>Thickness</div>
+                                <div class="spec-value">@Model.Thickness</div>
+                            </div>
+                        </div>
+
+                        <!-- Available Sizes -->
+                        @if (Model.Sizes.Any())
+                        {
+                            <div class="mb-3">
+                                <h6 class="fw-semibold mb-2"><i class="fas fa-expand me-2 text-gold"></i>Available Sizes</h6>
+                                <div class="tag-group">
+                                    @foreach (var s in Model.Sizes)
+                                    {
+                                        <span class="tag-chip">@s</span>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                        <!-- Available Finishes -->
+                        @if (Model.FinishTypes.Any())
+                        {
+                            <div class="mb-3">
+                                <h6 class="fw-semibold mb-2"><i class="fas fa-brush me-2 text-gold"></i>Available Finishes</h6>
+                                <div class="tag-group">
+                                    @foreach (var f in Model.FinishTypes)
+                                    {
+                                        <span class="tag-chip">@f</span>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                        <!-- Applications -->
+                        @if (Model.Applications.Any())
+                        {
+                            <div class="mb-4">
+                                <h6 class="fw-semibold mb-2"><i class="fas fa-tools me-2 text-gold"></i>Applications</h6>
+                                <div class="tag-group">
+                                    @foreach (var a in Model.Applications)
+                                    {
+                                        <span class="tag-chip tag-chip-app">@a</span>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                        <!-- MOQ -->
+                        <div class="moq-box mb-4">
+                            <i class="fas fa-boxes text-gold me-2"></i>
+                            <strong>Minimum Order:</strong> @Model.MOQ
+                            <span class="ms-3 text-muted small">|</span>
+                            <span class="ms-2 text-muted small"><i class="fas fa-info-circle me-1"></i>Custom sizes &
+                                smaller orders available on request</span>
+                            </div>
+
+                            <!-- Export Details -->
+                            @if (!string.IsNullOrEmpty(Model.ExportDetails))
+                            {
+                                <div class="export-box mb-4">
+                                    <i class="fas fa-ship text-gold me-2"></i>@Model.ExportDetails
+                                </div>
+                            }
+
+                            <!-- Action Buttons -->
+                            <div class="product-action-buttons">
+                                <button class="btn btn-gold btn-lg px-4" onclick="openInquiry('@Model.Name')">
+                                    <i class="fas fa-paper-plane me-2"></i>Enquiry Now
+                                </button>
+                                <a href="https://wa.me/919999999999?text=Hello%2C%20I%20am%20interested%20in%20@Uri.EscapeDataString(Model.Name)"
+                                       target="_blank" class="btn btn-whatsapp btn-lg px-4">
+                                    <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                                </a>
+                                <button class="btn btn-outline-dark btn-lg px-4" onclick="window.print()">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        @if (related.Any())
+        {
+            <section class="section-padding bg-light-stone">
+                <div class="container">
+                    <h3 class="section-title mb-4">Related <span class="text-gold">Products</span></h3>
+                    <div class="row g-4">
+                        @foreach (var product in related)
+                        {
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="product-card">
+                                    <div class="product-img-wrap">
+                                        <img src="@product.Images.FirstOrDefault()" alt="@product.Name" loading="lazy" />
+                                        <div class="product-overlay">
+                                            <div class="product-actions">
+                                                <a asp-controller="Product" asp-action="Details" asp-route-slug="@product.Slug"
+                                                   class="btn btn-sm btn-light rounded-pill px-3">View Details</a>
+                                                <button class="btn btn-sm btn-gold rounded-pill px-3"
+                                                        onclick="openInquiry('@product.Name')">Enquire</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-body">
+                                        <h6 class="product-name">
+                                            <a asp-controller="Product" asp-action="Details"
+                                               asp-route-slug="@product.Slug">@product.Name</a>
+                                        </h6>
+                                        <div class="product-meta">
+                                            <span><i class="fas fa-palette me-1 text-gold"></i>@product.FinishType</span>
+                                            <span><i class="fas fa-ruler me-1 text-gold"></i>@product.Size</span>
+                                        </div>
+                                        <button class="btn btn-sm btn-gold w-100 mt-2" onclick="openInquiry('@product.Name')">
+                                            <i class="fas fa-paper-plane me-1"></i>Inquiry Now
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </section>
+        }
+
+        @section Scripts {
+            <script>
+                function setMainImage(thumb, src) {
+                    document.getElementById('mainImage').src = src;
+                    document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
+                    thumb.classList.add('active');
+                }
+                document.getElementById('mainImage').addEventListener('click', function () {
+                    var overlay = document.createElement('div');
+                    overlay.className = 'img-zoom-overlay';
+                    overlay.innerHTML = '<img src="' + this.src + '" /><div class="zoom-close"><i class="fas fa-times"></i></div>';
+                    document.body.appendChild(overlay);
+                    overlay.addEventListener('click', function () { this.remove(); });
+                });
+            </script>
+        }

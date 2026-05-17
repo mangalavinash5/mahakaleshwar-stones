@@ -1,0 +1,568 @@
+@model JaipurMeniral.ViewModels.HomeViewModel
+@{
+    ViewData["Title"] = "Mahakaleshwar Stones - Premium Sandstone Manufacturer & Exporter from India";
+    ViewData["MetaDescription"] = "Mahakaleshwar Stones — India's leading natural stone manufacturer & exporter. Premium sandstone, marble, granite, and limestone exported to 25+ countries. Get a free quote today.";
+}
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-9">
+                    <span class="hero-badge animate-fade-up"><i class="fas fa-map-marker-alt me-1"></i>Rajasthan, India
+                        · Exporting to 25+ Countries</span>
+                        <h1 class="hero-title animate-fade-up delay-1">
+                            Mahakaleshwar <span class="text-gold">Stones</span>
+                        </h1>
+                        <p class="hero-subtitle animate-fade-up delay-2">Premium Sandstone Manufacturer & Exporter from
+                            India</p>
+                            <p class="hero-desc animate-fade-up delay-3">Supplying the world with nature's finest stones —
+                                sandstone, marble, granite & limestone — straight from the quarries of Rajasthan.</p>
+                                <div class="hero-actions animate-fade-up delay-4">
+                                    <a asp-controller="Product" asp-action="Index" class="btn btn-gold btn-hero">
+                                        <i class="fas fa-th me-2"></i>View Products
+                                    </a>
+                                    <button class="btn btn-hero-outline" data-bs-toggle="modal" data-bs-target="#inquiryModal">
+                                        <i class="fas fa-paper-plane me-2"></i>Contact Us
+                                    </button>
+                                </div>
+                                <div class="hero-trust animate-fade-up delay-5">
+                                    <span><i class="fas fa-certificate text-gold me-1"></i>ISO Certified</span>
+                                    <span><i class="fas fa-ship text-gold me-1"></i>Global Export</span>
+                                    <span><i class="fas fa-award text-gold me-1"></i>25+ Years</span>
+                                    <span><i class="fas fa-headset text-gold me-1"></i>24/7 Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <a href="#about"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </section>
+
+            <!-- STATISTICS COUNTER -->
+            <section class="stats-section">
+                <div class="container">
+                    <div class="stats-wrapper">
+                        <div class="stat-item" data-count="25">
+                            <div class="stat-icon"><i class="fas fa-history"></i></div>
+                            <div class="stat-number"><span class="counter">0</span>+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item" data-count="500">
+                            <div class="stat-icon"><i class="fas fa-building"></i></div>
+                            <div class="stat-number"><span class="counter">0</span>+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item" data-count="25">
+                            <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                            <div class="stat-number"><span class="counter">0</span>+</div>
+                            <div class="stat-label">Export Countries</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item" data-count="1000">
+                            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                            <div class="stat-number"><span class="counter">0</span>+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section class="about-section section-padding" id="about">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6">
+                            <div class="about-images">
+                                <div class="about-img-main">
+                                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80"
+                                         alt="Sandstone Manufacturing" class="img-fluid rounded-3 shadow-lg" loading="lazy" />
+                                </div>
+                                <div class="about-img-secondary">
+                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80"
+                                         alt="Stone Processing" class="img-fluid rounded-3 shadow" loading="lazy" />
+                                </div>
+                                <div class="about-badge-floating">
+                                    <div class="text-center">
+                                        <div class="fw-bold fs-1 text-gold">25+</div>
+                                        <div class="small text-white">Years of Excellence</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="section-label">About Mahakaleshwar Stones</div>
+                            <h2 class="section-title">Rajasthan's Premier <span class="text-gold">Natural Stone</span> Exporter</h2>
+                            <p class="lead text-muted mb-4">For over 25 years, Mahakaleshwar Stones has been at the forefront of
+                                natural stone manufacturing and export, delivering the finest Rajasthani sandstone, marble, granite,
+                                and limestone to architects, builders, and importers worldwide.</p>
+                                <p class="text-muted mb-4">Our quarries in Rajasthan yield some of the world's most beautiful natural
+                                    stone. From the iconic pink sandstone of Jodhpur to the legendary white marble of Makrana, we
+                                    source, process, and export stone that becomes the foundation of iconic buildings and beautiful
+                                    spaces across the globe.</p>
+                                    <div class="row g-3 mb-4">
+                                        <div class="col-sm-6">
+                                            <div class="feature-check"><i class="fas fa-check-circle text-gold me-2"></i>ISO 9001:2015
+                                                Certified</div>
+                                                <div class="feature-check"><i class="fas fa-check-circle text-gold me-2"></i>In-house Processing
+                                                    Unit</div>
+                                                    <div class="feature-check"><i class="fas fa-check-circle text-gold me-2"></i>Free Samples
+                                                        Available</div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="feature-check"><i class="fas fa-check-circle text-gold me-2"></i>Custom Cutting &
+                                                            Sizing</div>
+                                                            <div class="feature-check"><i class="fas fa-check-circle text-gold me-2"></i>Export Packing
+                                                                Experts</div>
+                                                                <div class="feature-check"><i class="fas fa-check-circle text-gold me-2"></i>Competitive Pricing
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="about-action-btns">
+                                                            <a asp-controller="About" asp-action="Index" class="btn btn-gold btn-lg px-4"><i
+                                                                class="fas fa-book-open me-2"></i>Read Our Story</a>
+                                                                <a asp-controller="Contact" asp-action="Index" class="btn btn-outline-dark btn-lg px-4"><i
+                                                                    class="fas fa-envelope me-2"></i>Get in Touch</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+
+                                                <!-- PRODUCT CATEGORIES -->
+                                                <section class="categories-section section-padding bg-light-stone" id="categories">
+                                                    <div class="container">
+                                                        <div class="text-center mb-5">
+                                                            <div class="section-label">What We Offer</div>
+                                                            <h2 class="section-title">Our Stone <span class="text-gold">Categories</span></h2>
+                                                            <p class="section-subtitle">From classic sandstone to luxurious marble — explore our comprehensive range of
+                                                                natural stones sourced from Rajasthan's finest quarries.</p>
+                                                            </div>
+                                                            <div class="row g-4">
+                                                                @foreach (var cat in Model.Categories)
+                                                                {
+                                                                    <div class="col-lg-3 col-md-4 col-sm-6">
+                                                                        <a asp-controller="Product" asp-action="Index" asp-route-category="@cat.Slug" class="category-card">
+                                                                            <div class="category-img-wrap">
+                                                                                <img src="@cat.Image" alt="@cat.Name" loading="lazy" />
+                                                                                <div class="category-overlay"></div>
+                                                                            </div>
+                                                                            <div class="category-body">
+                                                                                <div class="category-icon"><i class="@cat.Icon"></i></div>
+                                                                                <h5 class="category-name">@cat.Name</h5>
+                                                                                <p class="category-desc">@cat.Description.Substring(0, Math.Min(70, cat.Description.Length))...
+                                                                                </p>
+                                                                                <div class="category-count">@cat.ProductCount Products <i class="fas fa-arrow-right ms-1"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                }
+                                                            </div>
+                                                            <div class="text-center mt-5">
+                                                                <a asp-controller="Product" asp-action="Index" class="btn btn-gold btn-lg px-5">
+                                                                    <i class="fas fa-th me-2"></i>Browse All Products
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                    <!-- FEATURED PRODUCTS -->
+                                                    <section class="products-section section-padding" id="featured">
+                                                        <div class="container">
+                                                            <div class="text-center mb-5">
+                                                                <div class="section-label">Top Sellers</div>
+                                                                <h2 class="section-title">Featured <span class="text-gold">Products</span></h2>
+                                                                <p class="section-subtitle">Our most popular natural stones, trusted by architects and developers across 25+
+                                                                    countries.</p>
+                                                                </div>
+                                                                <div class="row g-4">
+                                                                    @foreach (var product in Model.FeaturedProducts)
+                                                                    {
+                                                                        <div class="col-lg-3 col-md-4 col-sm-6">
+                                                                            <div class="product-card">
+                                                                                <div class="product-img-wrap">
+                                                                                    <img src="@product.Images.FirstOrDefault()" alt="@product.Name" loading="lazy" />
+                                                                                    <div class="product-overlay">
+                                                                                        <div class="product-actions">
+                                                                                            <a asp-controller="Product" asp-action="Details" asp-route-slug="@product.Slug"
+                                                                                               class="btn btn-sm btn-light rounded-pill px-3">View Details</a>
+                                                                                            <button class="btn btn-sm btn-gold rounded-pill px-3"
+                                                                                                    onclick="openInquiry('@product.Name')">Enquire</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="product-badge">@product.CategoryName</div>
+                                                                                </div>
+                                                                                <div class="product-body">
+                                                                                    <h6 class="product-name">@product.Name</h6>
+                                                                                    <div class="product-meta">
+                                                                                        <span><i class="fas fa-palette me-1 text-gold"></i>@product.FinishType</span>
+                                                                                        <span><i class="fas fa-ruler me-1 text-gold"></i>@product.Size</span>
+                                                                                    </div>
+                                                                                    <div class="product-footer">
+                                                                                        <button class="btn btn-sm btn-gold w-100" onclick="openInquiry('@product.Name')">
+                                                                                            <i class="fas fa-paper-plane me-1"></i>Inquiry Now
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    }
+                                                                </div>
+                                                                <div class="text-center mt-5">
+                                                                    <a asp-controller="Product" asp-action="Index" class="btn btn-outline-dark btn-lg px-5">View All Products <i
+                                                                        class="fas fa-arrow-right ms-2"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </section>
+
+                                                            <!-- WHY CHOOSE US -->
+                                                            <section class="why-section section-padding bg-charcoal text-white">
+                                                                <div class="container">
+                                                                    <div class="text-center mb-5">
+                                                                        <div class="section-label-light">Why Importers Choose Us</div>
+                                                                        <h2 class="section-title text-white">The Mahakaleshwar Stones <span class="text-gold">Difference</span></h2>
+                                                                    </div>
+                                                                    <div class="row g-4">
+                                                                        <div class="col-lg-4 col-md-6">
+                                                                            <div class="why-card">
+                                                                                <div class="why-icon"><i class="fas fa-gem"></i></div>
+                                                                                <h5>Premium Quality Stone</h5>
+                                                                                <p>Directly sourced from Rajasthan's finest quarries. Every piece is inspected for colour
+                                                                                    consistency, thickness, and structural integrity before export.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-6">
+                                                                                <div class="why-card">
+                                                                                    <div class="why-icon"><i class="fas fa-ship"></i></div>
+                                                                                    <h5>Global Export Expertise</h5>
+                                                                                    <p>25+ years of export experience to 25+ countries. We handle all documentation — GST invoices,
+                                                                                        phytosanitary, CE, origin certificates, and shipping logistics.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-lg-4 col-md-6">
+                                                                                    <div class="why-card">
+                                                                                        <div class="why-icon"><i class="fas fa-cogs"></i></div>
+                                                                                        <h5>Custom Manufacturing</h5>
+                                                                                        <p>State-of-the-art CNC cutting machinery allows any size, thickness, shape, and finish to your
+                                                                                            exact project specifications.</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-lg-4 col-md-6">
+                                                                                        <div class="why-card">
+                                                                                            <div class="why-icon"><i class="fas fa-box-open"></i></div>
+                                                                                            <h5>Secure Export Packing</h5>
+                                                                                            <p>ISPM-15 compliant wooden crates, foam-padded layering, and moisture-resistant wrapping ensure
+                                                                                                your stone arrives in perfect condition.</p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-md-6">
+                                                                                            <div class="why-card">
+                                                                                                <div class="why-icon"><i class="fas fa-flask"></i></div>
+                                                                                                <h5>Tested & Certified</h5>
+                                                                                                <p>ISO 9001:2015 certified. Products tested for slip resistance, water absorption, flexural
+                                                                                                    strength, and frost resistance per international standards.</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-lg-4 col-md-6">
+                                                                                                <div class="why-card">
+                                                                                                    <div class="why-icon"><i class="fas fa-headset"></i></div>
+                                                                                                    <h5>Dedicated Support</h5>
+                                                                                                    <p>A personal export manager for every client. From sample request to final delivery — we're with
+                                                                                                        you every step of the way.</p>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
+
+                                                                                    <!-- EXPORT COUNTRIES -->
+                                                                                    <section class="export-section section-padding">
+                                                                                        <div class="container">
+                                                                                            <div class="text-center mb-5">
+                                                                                                <div class="section-label">Global Reach</div>
+                                                                                                <h2 class="section-title">Exporting to <span class="text-gold">25+ Countries</span></h2>
+                                                                                                <p class="section-subtitle">Our natural stones grace homes, hotels, and commercial spaces across the world.
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="export-countries-grid">
+                                                                                                @{
+                                                                                                    var countries = new[] {
+                    ("🇬🇧","United Kingdom"),("🇺🇸","United States"),("🇦🇺","Australia"),("🇦🇪","UAE"),
+                    ("🇸🇬","Singapore"),("🇩🇪","Germany"),("🇫🇷","France"),("🇳🇱","Netherlands"),
+                    ("🇨🇦","Canada"),("🇳🇿","New Zealand"),("🇸🇦","Saudi Arabia"),("🇶🇦","Qatar"),
+                    ("🇿🇦","South Africa"),("🇮🇹","Italy"),("🇧🇪","Belgium"),("🇨🇭","Switzerland"),
+                    ("🇸🇪","Sweden"),("🇯🇵","Japan"),("🇰🇷","South Korea"),("🇧🇭","Bahrain"),
+                    ("🇴🇲","Oman"),("🇿🇼","Zimbabwe"),("🇮🇪","Ireland"),("🇵🇱","Poland"),("🇲🇻","Maldives")
+                };
+                                                                                                }
+                                                                                                @foreach (var (flag, name) in countries)
+                                                                                                {
+                                                                                                    <div class="country-chip">
+                                                                                                        <span class="country-flag">@flag</span>
+                                                                                                        <span class="country-name">@name</span>
+                                                                                                    </div>
+                                                                                                }
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </section>
+
+                                                                                    <!-- PROJECTS SHOWCASE -->
+                                                                                    <section class="projects-section section-padding bg-light-stone" id="projects">
+                                                                                        <div class="container">
+                                                                                            <div class="text-center mb-5">
+                                                                                                <div class="section-label">Our Portfolio</div>
+                                                                                                <h2 class="section-title">Recent <span class="text-gold">Projects</span></h2>
+                                                                                                <p class="section-subtitle">Real projects, real craftsmanship — from luxury villas to heritage restorations
+                                                                                                    worldwide.</p>
+                                                                                                </div>
+                                                                                                <div class="row g-4">
+                                                                                                    @foreach (var project in Model.Projects)
+                                                                                                    {
+                                                                                                        <div class="col-lg-4 col-md-6">
+                                                                                                            <div class="project-card">
+                                                                                                                <div class="project-img-wrap">
+                                                                                                                    <img src="@project.Image" alt="@project.Title" loading="lazy" />
+                                                                                                                    <div class="project-overlay">
+                                                                                                                        <div class="project-info">
+                                                                                                                            <span class="project-cat">@project.Category</span>
+                                                                                                                            <h5>@project.Title</h5>
+                                                                                                                            <p class="small"><i class="fas fa-map-marker-alt me-1"></i>@project.Location</p>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="project-body">
+                                                                                                                    <h6>@project.Title</h6>
+                                                                                                                    <p class="text-muted small mb-2">@project.Description.Substring(0, Math.Min(90,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            project.Description.Length))...</p>
+                                                                                                                        <div class="d-flex justify-content-between align-items-center">
+                                                                                                                            <small class="text-gold"><i
+                                                                                                                                class="fas fa-cube me-1"></i>@project.MaterialUsed.Split(',')[0]</small>
+                                                                                                                                <small class="text-muted"><i class="fas fa-map-pin me-1"></i>@project.Location</small>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            }
+                                                                                                        </div>
+                                                                                                        <div class="text-center mt-5">
+                                                                                                            <a asp-controller="Project" asp-action="Index" class="btn btn-gold btn-lg px-5">View All Projects <i
+                                                                                                                class="fas fa-arrow-right ms-2"></i></a>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </section>
+
+                                                                                                    <!-- TESTIMONIALS -->
+                                                                                                    <section class="testimonials-section section-padding">
+                                                                                                        <div class="container">
+                                                                                                            <div class="text-center mb-5">
+                                                                                                                <div class="section-label">Client Reviews</div>
+                                                                                                                <h2 class="section-title">What Our <span class="text-gold">Clients Say</span></h2>
+                                                                                                            </div>
+                                                                                                            <div class="row g-4">
+                                                                                                                <div class="col-lg-4 col-md-6">
+                                                                                                                    <div class="testimonial-card">
+                                                                                                                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                                                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                                                                                            <p class="testimonial-text">"Outstanding quality sandstone and exceptional service. The Jodhpur Pink
+                                                                                                                                Tiles we ordered were perfectly calibrated and the colour was exactly as the samples. Will
+                                                                                                                                definitely order again."</p>
+                                                                                                                                <div class="testimonial-author">
+                                                                                                                                    <div class="testimonial-avatar">JM</div>
+                                                                                                                                    <div>
+                                                                                                                                        <div class="testimonial-name">James Mitchell</div>
+                                                                                                                                        <div class="testimonial-role">Landscape Architect, London, UK</div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="col-lg-4 col-md-6">
+                                                                                                                            <div class="testimonial-card">
+                                                                                                                                <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                                                                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                                                                                                    <p class="testimonial-text">"We've been importing from Mahakaleshwar Stones for 5 years for our
+                                                                                                                                        hotel projects across Southeast Asia. Their consistency in quality, packaging, and delivery
+                                                                                                                                        timelines is unmatched."</p>
+                                                                                                                                        <div class="testimonial-author">
+                                                                                                                                            <div class="testimonial-avatar">SC</div>
+                                                                                                                                            <div>
+                                                                                                                                                <div class="testimonial-name">Sarah Chen</div>
+                                                                                                                                                <div class="testimonial-role">Interior Design Director, Singapore</div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-lg-4 col-md-6">
+                                                                                                                                    <div class="testimonial-card">
+                                                                                                                                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                                                                                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                                                                                                                            <p class="testimonial-text">"The Makrana White Marble we received for our luxury development was
+                                                                                                                                                absolutely stunning. Mahakaleshwar Stones's export team handled all documentation seamlessly.
+                                                                                                                                                Highly recommended."</p>
+                                                                                                                                                <div class="testimonial-author">
+                                                                                                                                                    <div class="testimonial-avatar">AK</div>
+                                                                                                                                                    <div>
+                                                                                                                                                        <div class="testimonial-name">Ahmed Al-Khatib</div>
+                                                                                                                                                        <div class="testimonial-role">Property Developer, Dubai, UAE</div>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </section>
+
+                                                                                                                            <!-- FAQ PREVIEW -->
+                                                                                                                            <section class="faq-preview-section section-padding bg-light-stone">
+                                                                                                                                <div class="container">
+                                                                                                                                    <div class="row align-items-start">
+                                                                                                                                        <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+                                                                                                                                            <div class="section-label">Common Questions</div>
+                                                                                                                                            <h2 class="section-title">Frequently Asked <span class="text-gold">Questions</span></h2>
+                                                                                                                                            <p class="text-muted">Everything you need to know about ordering and exporting natural stone from India.
+                                                                                                                                            </p>
+                                                                                                                                            <div class="d-flex justify-content-center justify-content-lg-start mt-3">
+                                                                                                                                                <a asp-controller="Faq" asp-action="Index" class="btn btn-gold px-4"><i
+                                                                                                                                                    class="fas fa-list me-2"></i>View All FAQs</a>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="col-lg-8">
+                                                                                                                                                <div class="accordion accordion-stone" id="faqHome">
+                                                                                                                                                    @{
+                                                                                                                                                        int i = 0;
+                                                                                                                                                    }
+                                                                                                                                                    @foreach (var faq in Model.FaqPreview)
+                                                                                                                                                    {
+                                                                                                                                                        <div class="accordion-item">
+                                                                                                                                                            <h2 class="accordion-header">
+                                                                                                                                                                <button class="accordion-button @(i == 0 ? "" : "collapsed")" type="button"
+                                                                                                                                                                        data-bs-toggle="collapse" data-bs-target="#fh@(faq.Id)">
+                                                                                                                                                                    @faq.Question
+                                                                                                                                                                </button>
+                                                                                                                                                            </h2>
+                                                                                                                                                            <div id="fh@(faq.Id)" class="accordion-collapse collapse @(i == 0 ? "show" : "")"
+                                                                                                                                                                 data-bs-parent="#faqHome">
+                                                                                                                                                                <div class="accordion-body">@faq.Answer</div>
+                                                                                                                                                            </div>
+                                                                                                                                                        </div>
+                                                                                                                                                        i++;
+                                                                                                                                                    }
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </section>
+
+                                                                                                                                <!-- INQUIRY FORM SECTION -->
+                                                                                                                                <section class="inquiry-section section-padding">
+                                                                                                                                    <div class="container">
+                                                                                                                                        <div class="row justify-content-center">
+                                                                                                                                            <div class="col-lg-8 text-center mb-5">
+                                                                                                                                                <div class="section-label">Get A Free Quote</div>
+                                                                                                                                                <h2 class="section-title">Send Us Your <span class="text-gold">Inquiry</span></h2>
+                                                                                                                                                <p class="section-subtitle">Tell us what stone you need, the quantity and your location — we'll respond
+                                                                                                                                                    with competitive pricing within 24 hours.</p>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                            <div class="row justify-content-center">
+                                                                                                                                                <div class="col-lg-9">
+                                                                                                                                                    <div class="inquiry-form-box">
+                                                                                                                                                        <form id="homeInquiryForm" class="row g-4">
+                                                                                                                                                            <div class="col-md-6">
+                                                                                                                                                                <label class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                                                                                                                                                                <input type="text" class="form-control form-control-lg" name="Name" placeholder="Your Name"
+                                                                                                                                                                       required />
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="col-md-6">
+                                                                                                                                                                <label class="form-label fw-semibold">Email Address <span
+                                                                                                                                                                    class="text-danger">*</span></label>
+                                                                                                                                                                    <input type="email" class="form-control form-control-lg" name="Email"
+                                                                                                                                                                           placeholder="your@email.com" required />
+                                                                                                                                                                </div>
+                                                                                                                                                                <div class="col-md-6">
+                                                                                                                                                                    <label class="form-label fw-semibold">Phone / WhatsApp <span
+                                                                                                                                                                        class="text-danger">*</span></label>
+                                                                                                                                                                        <input type="tel" class="form-control form-control-lg" name="Phone"
+                                                                                                                                                                               placeholder="+1 234 567 8900" required />
+                                                                                                                                                                    </div>
+                                                                                                                                                                    <div class="col-md-6">
+                                                                                                                                                                        <label class="form-label fw-semibold">Country <span class="text-danger">*</span></label>
+                                                                                                                                                                        <select class="form-select form-select-lg" name="Country" required>
+                                                                                                                                                                            <option value="">Select Your Country</option>
+                                                                                                                                                                            <option>United Kingdom</option>
+                                                                                                                                                                            <option>United States</option>
+                                                                                                                                                                            <option>Australia</option>
+                                                                                                                                                                            <option>UAE</option>
+                                                                                                                                                                            <option>Singapore</option>
+                                                                                                                                                                            <option>Germany</option>
+                                                                                                                                                                            <option>France</option>
+                                                                                                                                                                            <option>Netherlands</option>
+                                                                                                                                                                            <option>Canada</option>
+                                                                                                                                                                            <option>Other</option>
+                                                                                                                                                                        </select>
+                                                                                                                                                                    </div>
+                                                                                                                                                                    <div class="col-12">
+                                                                                                                                                                        <label class="form-label fw-semibold">Product / Stone Type</label>
+                                                                                                                                                                        <input type="text" class="form-control form-control-lg" name="ProductName"
+                                                                                                                                                                               placeholder="e.g. Jodhpur Pink Sandstone, Kandla Grey 600x300mm" />
+                                                                                                                                                                    </div>
+                                                                                                                                                                    <div class="col-12">
+                                                                                                                                                                        <label class="form-label fw-semibold">Project Details & Requirements <span
+                                                                                                                                                                            class="text-danger">*</span></label>
+                                                                                                                                                                            <textarea class="form-control" name="Message" rows="4"
+                                                                                                                                                                                      placeholder="Describe your project, quantity (sqm/tonnes), sizes, finishes, and any special requirements..."
+                                                                                                                                                                                      required></textarea>
+                                                                                                                                                                        </div>
+                                                                                                                                                                        <div class="col-12 d-flex flex-column align-items-center gap-2">
+                                                                                                                                                                            <button type="submit" class="btn btn-gold btn-lg px-5 py-3 w-100" style="max-width:320px"
+                                                                                                                                                                                    id="homeInquiryBtn">
+                                                                                                                                                                                <span class="submit-text"><i class="fas fa-paper-plane me-2"></i>Send My Inquiry</span>
+                                                                                                                                                                                <span class="submit-loading d-none"><span
+                                                                                                                                                                                    class="spinner-border spinner-border-sm me-2"></span>Sending...</span>
+                                                                                                                                                                                </button>
+                                                                                                                                                                                <p class="text-muted small mb-0"><i class="fas fa-lock me-1"></i>Your information is safe
+                                                                                                                                                                                    with us. We reply within 24 hours.</p>
+                                                                                                                                                                                </div>
+                                                                                                                                                                            </form>
+                                                                                                                                                                        </div>
+                                                                                                                                                                    </div>
+                                                                                                                                                                </div>
+                                                                                                                                                            </div>
+                                                                                                                                                        </section>
+
+                                                                                                                                                        @section Scripts {
+                                                                                                                                                            <script>
+                                                                                                                                                                $('#homeInquiryForm').on('submit', function (e) {
+                                                                                                                                                                    e.preventDefault();
+                                                                                                                                                                    var btn = $('#homeInquiryBtn');
+                                                                                                                                                                    btn.find('.submit-text').addClass('d-none');
+                                                                                                                                                                    btn.find('.submit-loading').removeClass('d-none');
+                                                                                                                                                                    btn.prop('disabled', true);
+                                                                                                                                                                    $.ajax({
+                                                                                                                                                                        url: '/Inquiry/Submit',
+                                                                                                                                                                        method: 'POST',
+                                                                                                                                                                        data: $(this).serialize(),
+                                                                                                                                                                        success: function (res) {
+                                                                                                                                                                            if (res.success) {
+                                                                                                                                                                                $('#homeInquiryForm')[0].reset();
+                                                                                                                                                                                showToast(res.message, 'success');
+                                                                                                                                                                            } else {
+                                                                                                                                                                                showToast(res.message, 'danger');
+                                                                                                                                                                            }
+                                                                                                                                                                        },
+                                                                                                                                                                        error: function () { showToast('Something went wrong. Please try again.', 'danger'); },
+                                                                                                                                                                        complete: function () {
+                                                                                                                                                                            btn.find('.submit-text').removeClass('d-none');
+                                                                                                                                                                            btn.find('.submit-loading').addClass('d-none');
+                                                                                                                                                                            btn.prop('disabled', false);
+                                                                                                                                                                        }
+                                                                                                                                                                    });
+                                                                                                                                                                });
+                                                                                                                                                            </script>
+                                                                                                                                                        }

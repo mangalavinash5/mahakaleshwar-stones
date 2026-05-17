@@ -1,0 +1,177 @@
+@{
+    ViewData["Title"] = "Contact Us - Mahakaleshwar Stones | Get In Touch";
+    ViewData["MetaDescription"] = "Contact Mahakaleshwar Stones for natural stone inquiries, export quotes, and samples. Phone, WhatsApp, email, or visit us in Rajasthan, India.";
+    var mapEmbed = ViewBag.MapEmbed as string ?? "";
+}
+
+<!-- Page Hero -->
+<section class="page-hero page-hero-sm"
+         style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80')">
+    <div class="page-hero-overlay"></div>
+    <div class="container text-center text-white position-relative">
+        <h1 class="page-hero-title">Contact <span class="text-gold">Us</span></h1>
+        <p class="page-hero-subtitle">We'd love to hear from you</p>
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+            <ol class="breadcrumb breadcrumb-light">
+                <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li class="breadcrumb-item active">Contact</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- Contact Info Cards -->
+<section class="py-5 bg-light-stone">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6">
+                <div class="contact-info-card text-center">
+                    <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                    <h6>Phone / WhatsApp</h6>
+                    <a href="tel:+919999999999">+91-99999-99999</a>
+                    <div class="mt-2">
+                        <a href="tel:+919999999999" class="btn btn-sm btn-outline-dark me-1"><i
+                            class="fas fa-phone me-1"></i>Call</a>
+                            <a href="https://wa.me/919999999999" target="_blank" class="btn btn-sm btn-whatsapp"><i
+                                class="fab fa-whatsapp me-1"></i>Chat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-card text-center">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <h6>Email Address</h6>
+                            <a href="mailto:info@jaipurmeniral.com">info@jaipurmeniral.com</a><br />
+                            <a href="mailto:export@jaipurmeniral.com" class="text-muted small">export@jaipurmeniral.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-card text-center">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <h6>Office Address</h6>
+                            <p class="text-muted mb-0">Plot No. 123, Industrial Area,<br />Ramganj Mandi, Kota,<br />Rajasthan -
+                                326519, India</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="contact-info-card text-center">
+                                <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+                                <h6>Working Hours</h6>
+                                <p class="text-muted mb-1">Monday – Saturday<br /><strong>9:00 AM – 6:00 PM IST</strong></p>
+                                <span class="badge bg-success">Available Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map + Form -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row g-5">
+                        <!-- Contact Form -->
+                        <div class="col-lg-6">
+                            <div class="section-label">Send a Message</div>
+                            <h2 class="section-title mb-4">Get In <span class="text-gold">Touch</span></h2>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="name" placeholder="Your Name" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" name="email" placeholder="your@email.com"
+                                               required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold">Phone</label>
+                                        <input type="tel" class="form-control" name="phone" placeholder="+1 234 567 8900" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold">Subject <span class="text-danger">*</span></label>
+                                        <select class="form-select" name="subject" required>
+                                            <option value="">Select Subject</option>
+                                            <option>Product Inquiry</option>
+                                            <option>Export Quote Request</option>
+                                            <option>Sample Request</option>
+                                            <option>Technical Question</option>
+                                            <option>Partnership Inquiry</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" name="message" rows="5"
+                                                  placeholder="Tell us how we can help you..." required></textarea>
+                                    </div>
+                                    <div class="col-12 d-flex">
+                                        <button type="submit" class="btn btn-gold btn-lg px-5 w-100 w-md-auto" id="contactSubmitBtn"
+                                                style="max-width:240px">
+                                            <span class="submit-text"><i class="fas fa-paper-plane me-2"></i>Send Message</span>
+                                            <span class="submit-loading d-none"><span
+                                                class="spinner-border spinner-border-sm me-2"></span>Sending...</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Map & Social -->
+                            <div class="col-lg-6">
+                                <div class="section-label">Find Us</div>
+                                <h2 class="section-title mb-4">Our <span class="text-gold">Location</span></h2>
+                                <div class="map-wrapper rounded-3 overflow-hidden shadow mb-4">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.123!2d76.57!3d24.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zUmFqYXN0aGFu!5e0!3m2!1sen!2sin!4v1620000000000"
+                                        width="100%" height="350" style="border:0;" allowfullscreen loading="lazy">
+                                    </iframe>
+                                </div>
+                                <div class="social-connect-box">
+                                    <h6 class="fw-bold mb-3">Connect With Us</h6>
+                                    <div class="d-flex gap-3 flex-wrap">
+                                        <a href="#" class="social-connect-btn facebook"><i
+                                            class="fab fa-facebook-f me-2"></i>Facebook</a>
+                                            <a href="#" class="social-connect-btn instagram"><i
+                                                class="fab fa-instagram me-2"></i>Instagram</a>
+                                                <a href="#" class="social-connect-btn linkedin"><i
+                                                    class="fab fa-linkedin-in me-2"></i>LinkedIn</a>
+                                                    <a href="https://wa.me/919999999999" target="_blank" class="social-connect-btn whatsapp"><i
+                                                        class="fab fa-whatsapp me-2"></i>WhatsApp</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                @section Scripts {
+                                    <script>
+                                        $('#contactForm').on('submit', function (e) {
+                                            e.preventDefault();
+                                            var btn = $('#contactSubmitBtn');
+                                            btn.find('.submit-text').addClass('d-none');
+                                            btn.find('.submit-loading').removeClass('d-none');
+                                            btn.prop('disabled', true);
+                                            $.ajax({
+                                                url: '/Contact/Submit',
+                                                method: 'POST',
+                                                data: $(this).serialize(),
+                                                success: function (res) {
+                                                    if (res.success) {
+                                                        $('#contactForm')[0].reset();
+                                                        showToast(res.message, 'success');
+                                                    } else {
+                                                        showToast(res.message, 'danger');
+                                                    }
+                                                },
+                                                error: function () { showToast('Something went wrong. Please try again.', 'danger'); },
+                                                complete: function () {
+                                                    btn.find('.submit-text').removeClass('d-none');
+                                                    btn.find('.submit-loading').addClass('d-none');
+                                                    btn.prop('disabled', false);
+                                                }
+                                            });
+                                        });
+                                    </script>
+                                }

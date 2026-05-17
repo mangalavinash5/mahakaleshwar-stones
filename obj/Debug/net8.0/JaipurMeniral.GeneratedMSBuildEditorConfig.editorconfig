@@ -9,67 +9,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = JaipurMeniral
 build_property.RootNamespace = JaipurMeniral
-build_property.ProjectDir = /Users/avinashsmac/Desktop/Jaipur_mineral/
+build_property.ProjectDir = /Users/avinashsmac/Desktop/mahakaleshwar-stones/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/avinashsmac/Desktop/Jaipur_mineral
+build_property.MSBuildProjectDirectory = /Users/avinashsmac/Desktop/mahakaleshwar-stones
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/About/Index.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/About/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Contact/Index.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Faq/Index.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Faq/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRmFxL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Home/Index.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Product/Details.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Product/Index.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Project/Index.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Project/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvamVjdC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Shared/_Footer.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Shared/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Gb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Shared/_Layout.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Shared/_Navbar.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Shared/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19OYXZiYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Shared/_ViewImports.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Shared/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/Shared/_WhatsAppButton.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/Shared/_WhatsAppButton.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19XaGF0c0FwcEJ1dHRvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/_ViewImports.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/avinashsmac/Desktop/Jaipur_mineral/Views/_ViewStart.cshtml]
+[/Users/avinashsmac/Desktop/mahakaleshwar-stones/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

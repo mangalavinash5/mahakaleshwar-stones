@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/avinashsmac/Desktop/Jaipur_mineral/JaipurMeniral.csproj": {}
+    "/Users/avinashsmac/Desktop/mahakaleshwar-stones/JaipurMeniral.csproj": {}
   },
   "projects": {
-    "/Users/avinashsmac/Desktop/Jaipur_mineral/JaipurMeniral.csproj": {
+    "/Users/avinashsmac/Desktop/mahakaleshwar-stones/JaipurMeniral.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/avinashsmac/Desktop/Jaipur_mineral/JaipurMeniral.csproj",
+        "projectUniqueName": "/Users/avinashsmac/Desktop/mahakaleshwar-stones/JaipurMeniral.csproj",
         "projectName": "JaipurMeniral",
-        "projectPath": "/Users/avinashsmac/Desktop/Jaipur_mineral/JaipurMeniral.csproj",
+        "projectPath": "/Users/avinashsmac/Desktop/mahakaleshwar-stones/JaipurMeniral.csproj",
         "packagesPath": "/Users/avinashsmac/.nuget/packages/",
-        "outputPath": "/Users/avinashsmac/Desktop/Jaipur_mineral/obj/",
+        "outputPath": "/Users/avinashsmac/Desktop/mahakaleshwar-stones/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/avinashsmac/.nuget/NuGet/NuGet.Config"
